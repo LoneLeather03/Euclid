@@ -7,7 +7,8 @@ public class Gcd {
     try {
       int a = Integer.parseInt(args[0]);
       int b = Integer.parseInt(args[1]);
-      System.out.printf("a = %d, b = %d%n", a, b);
+      int result = gcd(a, b);
+      System.out.printf("Gcd(%d, %d) = %d %n", a, b, result);
 
 
 
@@ -15,11 +16,18 @@ public class Gcd {
       ex.printStackTrace();
       System.out.println("Must use integers only");
 
-    }
-    catch (ArrayIndexOutOfBoundsException ex) {
+    } catch (ArrayIndexOutOfBoundsException ex) {
       ex.printStackTrace();
       System.out.println("Must have two parameters");
     }
+
+
+  }
+
+
+  public static int gcd(int a, int b) {
+    return 0;
+
 
   }
 }
