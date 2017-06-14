@@ -16,6 +16,10 @@ public class Gcd {
       System.out.println("Must use integers only");
 
     }
+    catch (ArrayIndexOutOfBoundsException ex) {
+      ex.printStackTrace();
+      System.out.println("Must have two parameters");
+    }
 
   }
 }
